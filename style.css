@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    margin: 50;
+    padding: 50;
+    color: rgb(206, 31, 55);
+}
+.wrapper{
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(-50deg, #e3a41e, #16d8d2, #80c11092);
+    background-size: 300% 300% ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center;
+    animation: backgroundTransition 8s ease-in-out infinite;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+h2{
+    text-transform: none;
+    letter-spacing: 4px;
+}
+.Social_midia {
+   margin-top: 1rem ;
+   display: flex; 
+}
+a {
+    text-decoration: none ;
+    color: #4e0f86;
+    font-size: 24px ;
+    padding: 1 rem 4rem ;
+    border: 2px solid #b6d1d7;
+    min-width: 4rem ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.025 , 0.675, 0.90);
+}
+a:hover{
+    color: #480c7c;
+    background-color: rgb(232, 58, 58);
+}
+@keyframes backgroundTransition{
+    0%{
+        background-position: 0% 80%;
+    }
+    50%{
+        background-position: 80% 100% ;
+    }
+    100%{
+        background-position: 0% 90% ;
+    }
+}
+
